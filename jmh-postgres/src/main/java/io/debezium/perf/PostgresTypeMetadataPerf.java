@@ -24,7 +24,7 @@ import org.openjdk.jmh.infra.Blackhole;
  *
  * @author vjuranek
  */
-@State(Scope.Benchmark)
+//@State(Scope.Benchmark)
 public class PostgresTypeMetadataPerf {
 
     private static final int OP_COUNT = 10;
@@ -66,11 +66,11 @@ public class PostgresTypeMetadataPerf {
         }
     }
 
-    @Benchmark
-    @BenchmarkMode(Mode.AverageTime)
-    @OutputTimeUnit(TimeUnit.MICROSECONDS)
-    @Fork(value = 1)
-    @OperationsPerInvocation(OP_COUNT)
+//    @Benchmark
+//    @BenchmarkMode(Mode.AverageTime)
+//    @OutputTimeUnit(TimeUnit.MICROSECONDS)
+//    @Fork(value = 1)
+//    @OperationsPerInvocation(OP_COUNT)
     public void columnMetadata(Blackhole bh) {
         for (int i = 0; i < OP_COUNT; i++) {
             bh.consume(columns[i].getTypeMetadata());

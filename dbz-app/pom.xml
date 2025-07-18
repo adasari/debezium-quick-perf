@@ -12,7 +12,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>21</maven.compiler.release>
-        <version.debezium>3.2.0-SNAPSHOT</version.debezium>
+        <version.debezium>3.3.0-SNAPSHOT</version.debezium>
         <version.slf4j>1.7.36</version.slf4j>
         <java.main.class>io.debezium.perf.DebeziumEngniePostgres</java.main.class>
     </properties>
